@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*************************** RESET ***************************/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,
+legend,table,caption,tbody,tfoot,thead,tr,th,td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*************************** RESET ***************************/
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    background-color: #edede7;
+    color: #231512;
+    font-feature-settings: "palt";
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+
+body{
+    scrollbar-width: none; /*Firefox対応のスクロールバー非表示コード*/
+    -ms-overflow-style: none;/*Internet Explore対応のスクロールバー非表示コード*/
+}
+body::-webkit-scrollbar {
+    display: none; /*Google Chrome、Safari、Microsoft Edge対応のスクロールバー非表示コード*/ 
+}
+
+img{
+	vertical-align:top;
+}
+a {
+	text-decoration: none;
+	color:#231512;
+}
+a:visited{
+	color:#231512;
+}
+a:hover {
+    color:#231512;
+	text-decoration: none;
+}
+a:active{
+	color:#231512;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    line-height: 1.5em;
+}
+#main p{
+    margin-bottom: 1.5em;
+}

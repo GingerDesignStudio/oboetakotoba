@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Language" content="ja" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="robots" content="noindex" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="おぼえたことばのえほん | AIえほん" />
+  <meta property="og:description" content="子どもの「おぼえたことば」を入れるとAIが物語をつくってくれる「えほん」です。あたらしい「ことば」に出会い、「ことば」のつながりを知ることで子どもの「せかい」を広げていきます。" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="img/ogp.png" />
+  <meta property="og:site_name" content="おぼえたことばのえほん | AIえほん" />
+  <meta property="og:email" content="" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description" content="子どもの「おぼえたことば」を入れるとAIが物語をつくってくれる「えほん」です。あたらしい「ことば」に出会い、「ことば」のつながりを知ることで子どもの「せかい」を広げていきます。" />
+  <meta name="twitter:title" content="おぼえたことばのえほん | AIえほん" />
+  <meta name="twitter:image" content="public/img/ogp.jpg" />
+
+  <meta name="description" content="子どもの「おぼえたことば」を入れるとAIが物語をつくってくれる「えほん」です。あたらしい「ことば」に出会い、「ことば」と「ことば」のつながりを知ることで子どもの「せかい」を広げていきます。" />
+  <meta name="author" content="おぼえたことばのえほん | AIえほん" />
+
+  <link rel="shortcut icon" href="img/favicon.ico" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>おぼえたことばのえほん | AIえほん</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    //HTMLが読み込まれたとき
+    $(document).ready(function() {
+      setViewport();
+      
+    });
+
+    //デバイスに合わせてViewportをセット
+    function setViewport(){
+      var getDevice;
+      var ua = navigator.userAgent;
+
+      if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+        getDevice='sp';
+      }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+        getDevice='tab';
+      }else{
+        getDevice='other';
+      }
+
+      if( getDevice == 'sp' ){
+        $('head').append('<meta name="viewport" content="width=480, user-scalable=yes" />');      
+      }else if( getDevice == 'tab' ){
+        $('head').append('<meta name="viewport" content="width=1100, user-scalable=yes" />');
+      }else if( getDevice == 'other' ){
+        $('head').append('<meta name="viewport" content="width=1100, user-scalable=yes" />');
+      }
+    }
+  </script>
+
+  <!-- Adobe Fonts -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'obh4mlc',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <p>
+      いまはえほんをつくれないよ<br>
+      トップでためしよみをたのしんでね
+    </p>
+    <img src="img/alert.svg">  
+  </div>
+
+</body>
+
+</html>
